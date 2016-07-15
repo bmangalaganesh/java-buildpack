@@ -78,7 +78,7 @@ module JavaBuildpack
           @droplet.environment_variables.as_env_vars,
           'eval',
           'exec',
-          "#{qualify_path @droplet.java_home.root, @droplet.root}/bin/java",
+          "#{qualify_path @droplet.java_home.root, @droplet.root}/bin/jmeter.sh",
           '$JAVA_OPTS',
           classpath,
           main_class,
